@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Movies - Balance</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+  <!-- Menu Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">The Movies</a>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="transaction.html">Transaction History</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="balance.html">Menu Balance</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Balance Menu -->
+  <div class="container mt-5">
+    <h2>Menu Balance</h2>
+    <form id="topUpForm">
+      <div class="mb-3">
+        <label for="topUpAmount">Top Up Amount:</label>
+        <input type="number" id="topUpAmount" class="form-control">
+      </div>
+      <button type="submit" class="btn btn-primary">Top Up</button>
+    </form>
+
+    <form id="withdrawForm" class="mt-4">
+      <div class="mb-3">
+        <label for="withdrawAmount">Withdraw Amount:</label>
+        <input type="number" id="withdrawAmount" class="form-control">
+      </div>
+      <button type="submit" class="btn btn-primary">Withdraw</button>
+    </form>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/balance.js"></script>
+</body>
+
+</html>
